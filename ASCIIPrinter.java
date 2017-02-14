@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  * This program opens a binary file and prints
- * all ASCII characters from that file (all bytes
+ * all ASCII characters from that file (bytes
  * with values between 32 and 126).
  * 
  * @author Leticia Garcia-Sainz
