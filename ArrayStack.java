@@ -1,13 +1,14 @@
 /**
  * This class is an implementation of a stack as an array.
+ * It is used to implement the TagChecker.java class.
  * @author Leticia Garcia-Sainz
- * @version 10-7-2015
+ * @version 11-7-2015
  */
 import java.util.Arrays;
 
 public class ArrayStack {
 
-	private Character stack[];
+	private String stack[];
 	private int currentSize;
 	
 	/**
@@ -15,7 +16,7 @@ public class ArrayStack {
 	 * @param size the size of the stack
 	 */
 	public ArrayStack(int size) {
-		stack = new Character[size];
+		stack = new String[size];
 		currentSize = 0;
 	}
 	
@@ -31,7 +32,7 @@ public class ArrayStack {
 	 * Adds an element to the top(end) of the stack.
 	 * @param str the element to be added
 	 */
-	public void push(Character str) {
+	public void push(String str) {
 		if (currentSize == stack.length) {
 			increaseStackSize();
 		}
@@ -44,9 +45,10 @@ public class ArrayStack {
 	 * Removes the element from the end(top) of stack. 
 	 * @return the removed element
 	 */
-	public Character pop() {
+	public String pop() {
 		if (empty()) {
 			System.out.print("The stack is empty");
+			return null;
 		}
 		else {
 			currentSize--;
