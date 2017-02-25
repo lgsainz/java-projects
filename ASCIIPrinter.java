@@ -57,17 +57,18 @@ public class ASCIIPrinter {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		
 		finally {
-            if(inStream != null){
-                try {
-                	// Close InputStream
-                    inStream.close();
-                } catch (IOException ex) {
-                	ex.printStackTrace();	
-                }
-            }
-            // Close PrintStream
-            out.close();
+            		if(inStream != null){
+                		try {
+                			// Close InputStream
+	                		inStream.close();
+		                } catch (IOException ex) {
+                			ex.printStackTrace();	
+                		}
+            		}
+	            	// Close PrintStream
+        	    	out.close();
 		}
 	}
 }	
